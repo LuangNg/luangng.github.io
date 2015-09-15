@@ -1,31 +1,538 @@
----
-layout: null
-title: Subscribe
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}/</link>
-    <atom:link href="{{ "/zfeed.xml" | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Welcome</title>
+    <description>Freshman21 is a Jekyll blog theme.</description>
+    <link>https://luangng.github.io/luangng/</link>
+    <atom:link href="https://luangng.github.io/luangng/zfeed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 15 Sep 2015 12:49:50 +0800</pubDate>
+    <lastBuildDate>Tue, 15 Sep 2015 12:49:50 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>MIT license</title>
+        <description>&lt;h2 id=&quot;warning&quot;&gt;Warning&lt;/h2&gt;
+
+&lt;p&gt;This repository is under MIT License.&lt;/p&gt;
+
+&lt;p&gt;Please do not remove the License when you fork or modify the repository.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;The MIT License (MIT)
+
+Copyright (c) 2014 Lijia Yu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you make attribute to this theme, &lt;a href=&quot;http://programmers.stackexchange.com/questions/277688/if-i-fork-a-project-on-github-that-is-licensed-under-mit-how-to-i-handle-the-at&quot;&gt;here&lt;/a&gt; is the right way to update License.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Copyright for portions of project &lt;q&gt;Foo&lt;/q&gt; are held by [Lijia Yu, 2014] as part of project &lt;q&gt;Freshman21&lt;/q&gt;. 
+All other copyright for project &lt;q&gt;Foo&lt;/q&gt; are held by [your name, year].&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;people-who-modify-this-repository-and-remove-my-mit-license&quot;&gt;People who modify this repository and remove my MIT License&lt;/h2&gt;
+
+</description>
+        <pubDate>Thu, 02 Jul 2015 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/2015/07/02/MIT-license.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/2015/07/02/MIT-license.html</guid>
+        
+        <category>MIT license</category>
+        
+        
+        <category>articles</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Error: invalid CP949 character</title>
+        <description>&lt;p&gt;In &lt;strong&gt;_layout.scss&lt;/strong&gt; file, &amp;lt; q &amp;gt; tag is used as a quotation mark. When apply this tag, it will display as “『』” on the page. One user report that on Windows it may cause a Error “invalid CPC949 character” when generate the site. A fast way to avoid this problem, please delete the lines of &amp;lt; q &amp;gt; tags in the &lt;strong&gt;_layout.scss&lt;/strong&gt; file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;### DELETE THE CODE BELOW IN _layout.scss FILE###
+/**
+ * New style for quotation.
+ */
+q:before {
+content: &#39;『&#39;;
+color: #DD1144;
+       font-weight:bold;
+}
+q:after {
+content:&#39;』&#39;;
+color: #DD1144;
+       font-weight:bold;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Wed, 03 Jun 2015 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/2015/06/03/invalid-CP949-character.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/2015/06/03/invalid-CP949-character.html</guid>
+        
+        <category>character</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>2.0 version</title>
+        <description>&lt;p&gt;Today, I update the theme with some new features. Welcome to use freshman21 2.0 version(gh-pages branch).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;gh-pages branch new features&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Google  search&lt;/li&gt;
+  &lt;li&gt;Google analytics&lt;/li&gt;
+  &lt;li&gt;Read more mode&lt;/li&gt;
+  &lt;li&gt;Open Graph META Tags&lt;/li&gt;
+  &lt;li&gt;Microdata(schema.org)&lt;/li&gt;
+  &lt;li&gt;back to top button&lt;/li&gt;
+  &lt;li&gt;font awesome icon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;master branch new features&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open Graph META Tags&lt;/li&gt;
+  &lt;li&gt;Microdata(schema.org)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The main difference between master and gh-pages: only one Javascript (Mathjax) be included in master branch.&lt;/p&gt;
+
+&lt;p&gt;Master branch is a more purified html+css framework than gh-pages branch.&lt;/p&gt;
+
+&lt;p&gt;Clone master branch:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt; git clone https://github.com/yulijia/freshman21.git -b master --single-branch&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Clone gh-pages branch:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git clone https://github.com/yulijia/freshman21.git -b gh-pages --single-branch&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 31 Mar 2015 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/news/2015/03/31/2.0version.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/news/2015/03/31/2.0version.html</guid>
+        
+        <category>version</category>
+        
+        <category>new features</category>
+        
+        <category>google analytics</category>
+        
+        <category>google search</category>
+        
+        <category>back to top</category>
+        
+        <category>read more</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>update</title>
+        <description>&lt;p&gt;There are three versions.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;master branch: the simplest template, original version. No js.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;gh-pages branch: master branch with google analytics js template.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;readmore branch: master branch with article summary.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enjoy.&lt;/p&gt;
+
+&lt;p&gt;I have been working on a big 2.0 update to this theme. Branch gh-pages and readmore will be merged.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 16 Mar 2015 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/2015/03/16/update.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/2015/03/16/update.html</guid>
+        
+        <category>version</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>Fix bugs</title>
+        <description>&lt;p&gt;Thanks to &lt;a href=&quot;http://blog.rickysu.com/about/&quot;&gt;@imrickysu&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h4 id=&quot;typo-in-tagsmd&quot;&gt;typo in tags.md&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/yulijia/freshman21/issues/2&quot;&gt;issues #2&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;change-siteurl-to-sitebaseurl-can-make-it-work-at-localhost&quot;&gt;Change &lt;code&gt;site.url&lt;/code&gt; to &lt;code&gt;site.baseurl&lt;/code&gt; can make it work at localhost&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/yulijia/freshman21/issues/3&quot;&gt;issues #3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From now on, I only post articles at gh-pages branch.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Feb 2015 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/2015/02/20/fix-bugs.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/2015/02/20/fix-bugs.html</guid>
+        
+        <category>bugs</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>A small change</title>
+        <description>&lt;p&gt;I made a small change in the gh-pages branch, add google analytics script.&lt;/p&gt;
+
+&lt;p&gt;The main &lt;q&gt;JS&lt;/q&gt; script was in the &lt;q&gt;_include&lt;/q&gt; folder, and  this JS file was included in &lt;q&gt;head.html&lt;/q&gt;.&lt;/p&gt;
+
+&lt;p&gt;In &lt;q&gt;_config.yml&lt;/q&gt; file, I add the Google analytics key.&lt;/p&gt;
+
+&lt;p&gt;To fork the version with google analytics, please try this command:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git clone --branch gh-pages https://github.com/yulijia/freshman21.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;attention-only-gh-pages-branch-has-google-analytics-and-this-article&quot;&gt;Attention: Only gh-pages branch has google analytics and this article.&lt;/h3&gt;
+</description>
+        <pubDate>Sun, 08 Feb 2015 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/2015/02/08/a-small-change.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/2015/02/08/a-small-change.html</guid>
+        
+        <category>features</category>
+        
+        <category>google analytics</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
+      <item>
+        <title>How to create post summary</title>
+        <description>&lt;p&gt;We can make a summary of post, and show it in the home page.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-only-show-a-part-of-posts&quot;&gt;How to only show a part of posts?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Method 1.&lt;/strong&gt; In &lt;a href=&quot;https://github.com/yulijia/freshman21/blob/master/index.html&quot;&gt;index.html&lt;/a&gt; file, set &lt;code&gt; \{\{ post.content | strip_html | truncatewords: 50 \}\}&lt;/code&gt; , produces a more consistent excerpt. It gets the first 50 words and strips any formatting.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;This method can automatically create a summary of article. However if the article begin with &lt;q&gt;code&lt;/q&gt; or &lt;q&gt;markdown tags&lt;/q&gt;, you will find the article css style can not shown on the home page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Method 2.&lt;/strong&gt; In &lt;a href=&quot;https://github.com/yulijia/freshman21/blob/master/index.html&quot;&gt;index.html&lt;/a&gt; file, using &lt;code&gt;\{\{ post.summary \}\}&lt;/code&gt; to insted of &lt;code&gt;\{\{ post.content \}\}&lt;/code&gt;, produces a summary of post. You need add summary in each &lt;q&gt;post&lt;/q&gt; file, &lt;a href=&quot;https://gist.github.com/yulijia/2f865b78a28bfe9e0a81#file-a-article-post-with-summary&quot;&gt;example&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you will find all articles summary in the home page.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-create-a-read-more-button-for-a-post&quot;&gt;How to create a read more button for a post?&lt;/h3&gt;
+
+&lt;p&gt;Basically, freshman21 doesn’t support “read more” button.&lt;/p&gt;
+
+&lt;p&gt;To create a page link(button) is very easy.&lt;/p&gt;
+
+&lt;p&gt;Just add&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;\{\{ post.url | prepend: site.baseurl \}\}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;read more&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;after &lt;code&gt;\{\{post.summary\}\}&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-example-of-post-summary-at-gisthttpsgistgithubcomyulijia2f865b78a28bfe9e0a81&quot;&gt;The example of post summary at &lt;a href=&quot;https://gist.github.com/yulijia/2f865b78a28bfe9e0a81&quot;&gt;Gist&lt;/a&gt;.&lt;/h2&gt;
+
+</description>
+        <pubDate>Sun, 18 Jan 2015 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/howto/2015/01/18/how-to-create-post-summary.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/howto/2015/01/18/how-to-create-post-summary.html</guid>
+        
+        <category>summary</category>
+        
+        
+        <category>howto</category>
+        
+      </item>
+    
+      <item>
+        <title>How to set the config.yml file</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;https://github.com/yulijia/freshman21/blob/master/_config.yml&quot;&gt;config.yml file&lt;/a&gt; in the Freshman21 theme includes five parts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First part&lt;/strong&gt; is the site info.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Freshman21&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# blog title&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;tagline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Another Jekyll theme, Freshman twenty-first&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# blog sub-titile&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Lijia YU&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# author name&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yu@lijiayu.net&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# author email&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Freshman21&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;theme.&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# You can edit this line in _config.yml. It will appear in your document head meta and in &lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;your feed.xml site description&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;keywords&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Jekyll,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;theme,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Freshman21&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# html meta keywords&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/freshman21&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the subpath of your site, e.g. /blog&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;http://yulijia.net/freshman21&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the base hostname &amp;amp; protocol for your site&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;strong&gt;Part 2&lt;/strong&gt;, Personal info and site tools info, twitter, github, aboutme and aboutme_photo only appears on the sidebar aboutme-box, you can &lt;q&gt;Hide&lt;/q&gt; in two ways &lt;sup&gt;&lt;a href=&quot;#[1]&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;twitter_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#your twitter handle  &lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;#your github account&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;disqus_shortname&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#disqus shortname&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;favicon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;images/favicon.ico&quot;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;aboutme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it.&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# these are shown on aboutme-box(sidebar).&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;aboutme_photo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://i.imgur.com/15BT1.jpg&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# your personal photo.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Part3&lt;/strong&gt;, Site setting:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;ShowContactInfo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;True&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown where ShowContactInfo == True&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;default_column&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;two&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# blog style: two columns, if default_column != &quot;two&quot;, you will see a one column blog.&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;default_locale&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;en&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# blog sidebar language set, only include: English(en) and Chinese (cn)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Part4&lt;/strong&gt;, Blogroll info, only &lt;em&gt;name&lt;/em&gt; tags can shown on the page.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;Blogroll&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Freshman&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://yulijia.net/freshman&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Another Jekyll blog theme&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;author&#39;s website&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://yulijia.net/&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Lijia Yu&#39;s website&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Part5&lt;/strong&gt;, Build settings&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;markdown&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;kramdown&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;highlighter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;pygments&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# highlight&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;paginate&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;5&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# how many post can seen in the main page&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;=====&lt;/p&gt;
+
+&lt;ul style=&quot;list-style-type:none;&quot;&gt; 
+&lt;li id=&quot;[1]&quot;&gt; [1], you can set those info at &lt;strong&gt;Part3&lt;/strong&gt; or just delete the &lt;q&gt;aboutme.html&lt;/q&gt; at &lt;q&gt;sidebar.html&lt;/q&gt; in &lt;code&gt;_include&lt;/code&gt; folder. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col-sm-2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!--{ % include Aboutme.html % }--&amp;gt;&lt;/span&gt;
+   { % include Copyright_Notice.html % }
+   { % include Recent_Posts.html % }
+   { % include Categories.html % }
+   { % include Tags.html % }
+   { % include Blogroll.html % }
+   { % include Archives.html % }
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 19 Dec 2014 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/howto/2014/12/19/how-to-set-the-config-file.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/howto/2014/12/19/how-to-set-the-config-file.html</guid>
+        
+        <category>configure</category>
+        
+        
+        <category>articles</category>
+        
+        <category>howto</category>
+        
+      </item>
+    
+      <item>
+        <title>Theme structure</title>
+        <description>&lt;h2 id=&quot;the-structure-of-freshman21-theme&quot;&gt;1.The structure of freshman21 theme&lt;/h2&gt;
+
+&lt;p&gt;You can see the simplest way of adding a page is just to add an HTML ( or markdown ) file in the root directory with a suitable name for the page you want to create. For example, aahome.md is the homepage link, about.md is the about page.&lt;/p&gt;
+
+&lt;p&gt;All sidebar boxes html files are in the &lt;code&gt;_include&lt;/code&gt; directory, their name begin with upper case. You can chose which sidebar boxes appears in the main page on the &lt;q&gt;sidebar.html&lt;/q&gt; in the &lt;code&gt;_includes&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;.
+|-- a_home.md                 &lt;span class=&quot;c&quot;&gt;# home page link at navigation bar&lt;/span&gt;
+|-- b_about.md                &lt;span class=&quot;c&quot;&gt;# about link at navigation bar&lt;/span&gt;
+|-- c_archives.md             &lt;span class=&quot;c&quot;&gt;# archives link at navigation bar&lt;/span&gt;
+|-- _config.yml
+|-- css
+|   &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;-- main.scss
+|-- d_categories.md           &lt;span class=&quot;c&quot;&gt;# categories link at navigation bar &lt;/span&gt;
+|-- e_tags.md                 &lt;span class=&quot;c&quot;&gt;# tags at main navigation bar&lt;/span&gt;
+|-- feed.xml                  &lt;span class=&quot;c&quot;&gt;# RSS at main navigation bar&lt;/span&gt;
+|-- f_guestbook.md            &lt;span class=&quot;c&quot;&gt;# guest book like at navigation bar&lt;/span&gt;
+|-- images
+|   &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;-- favicon.ico           &lt;span class=&quot;c&quot;&gt;# here is your website favicon&lt;/span&gt;
+|-- _includes
+|   |-- Aboutme.html          &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|   |-- Archives.html         &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|   |-- Blogroll.html         &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|   |-- Categories.html       &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|   |-- comments.html         &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|   |-- Copyright_Notice.html &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|   |-- footer.html
+|   |-- header.html
+|   |-- head.html
+|   |-- page_pagination.html
+|   |-- post_pagination.html
+|   |-- Recent_Posts.html     &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|   |-- sidebar.html          &lt;span class=&quot;c&quot;&gt;# you can set you own sidebar content in here&lt;/span&gt;
+|   &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;-- Tags.html             &lt;span class=&quot;c&quot;&gt;# right column sidebar content&lt;/span&gt;
+|-- index.html
+|-- _layouts
+|   |-- default.html
+|   |-- page.html
+|   &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;-- post.html
+|-- LICENSE
+|-- _posts
+|   |-- 2013-10-10-milu.md
+|   |-- 2014-12-13-simple-post.md
+|   |-- 2014-12-18-how-to-install.md
+|   |-- 2014-12-19-freshman21-structure.md
+|   |-- 2014-12-19-how-to-set-the-config-file.md
+|   &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;-- 2015-03-31-readme.md
+|-- README.md
+&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;-- _sass
+    |-- _base.scss
+    |-- _layout.scss
+    |-- _syntax-highlighting-native.scss
+    &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;-- _syntax-highlighting.scss&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;structure-with-named-folders-containing-index-html-files&quot;&gt;2.Structure with Named folders containing index HTML files&lt;/h2&gt;
+
+&lt;p&gt;There is nothing wrong with the above method, however some people like to keep their URLs free from things like filename extensions. To achieve clean URLs for pages using Jekyll, you simply need to create a folder for each top-level page you want, and then place an index.html file in each page’s folder. You can find the more detail at &lt;a href=&quot;http://jekyllrb.com/docs/pages/&quot; title=&quot;Creating pages&quot;&gt;Jekyll documentation&lt;/a&gt;. Here is my own blog structure with page-folders to contain each pages.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;.
+├── _backup
+│   ├── en.tar.gz
+│   └── style.css
+├── categories                              &lt;span class=&quot;c&quot;&gt;# =&amp;gt; http://yulijia.net/en/categories/ &lt;/span&gt;
+│   └── index.md
+├── _config.yml
+├── css
+│   └── main.scss
+├── feed                                    &lt;span class=&quot;c&quot;&gt;# =&amp;gt; http://yulijia.net/en/feed/index.xml&lt;/span&gt;
+│   └── index.xml
+├── guestbook                               &lt;span class=&quot;c&quot;&gt;# =&amp;gt; http://yulijia.net/en/guestbook/&lt;/span&gt;
+│   └── index.md
+├── home.md
+├── _includes
+│   ├── Aboutme.html
+│   ├── Archives.html
+│   ├── Blogroll.html
+│   ├── Categories.html
+│   ├── comments.html
+│   ├── Copyright_Notice.html
+│   ├── footer.html
+│   ├── header.html
+│   ├── head.html
+│   ├── page_pagination.html
+│   ├── post_pagination.html
+│   ├── Recent_Posts.html
+│   ├── sidebar.html
+│   └── Tags.html
+├── index.html
+├── _layouts
+│   ├── default.html
+│   ├── page.html
+│   └── post.html
+├── _posts
+│   ├── 2011-07-22-hello-world.md
+│   ├── 2011-08-06-how-to-calculate-word-frequencies-with-r.md
+│   ├── 2011-08-18-should-draco-be-effective-against-virtually-all-viruses.md
+│   ├── 2011-10-21-why-viruses-produce-long-dsrna-but-not-endogenous-ones.md
+│   ├── 2012-03-22-100-things-bioinformatics-students-should-do-before-graduating.md
+│   ├── 2012-10-08-a-new-site.md
+│   ├── 2012-10-09-github-pages.md
+│   ├── 2012-10-22-a-conference-of-Genomics-and-Epigenomics.md
+│   ├── 2012-10-23-CSHL-Asia-interesting-talks-on-genomics-and-epigenomics.md
+│   └── 2013-01-30-how-to-get-RefSeq-gene-annotations-from-UCSCdatabase.md
+├── README.md
+├── _sass
+│   ├── _base.scss
+│   ├── _layout.scss
+│   └── _syntax-highlighting.scss
+└── tags
+    └── index.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;how-to-change-the-highlight-style&quot;&gt;3. How to change the highlight style?&lt;/h2&gt;
+
+&lt;p&gt;This theme’s default highlighter is pygments.&lt;/p&gt;
+
+&lt;p&gt;To change the highlight style, you should install &lt;strong&gt;pygments&lt;/strong&gt;, and generate the css style which you wanted with code&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pygmentize -S default -f html &amp;gt; freshman/_sass/_syntax-highlighting.scss&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Please make sure, add &lt;code&gt;.highlight {&lt;/code&gt; at the head  and &lt;code&gt;}&lt;/code&gt; at the end of file &lt;q&gt;_syntax-highlighting.scss&lt;/q&gt;.&lt;/p&gt;
+
+&lt;p&gt;See more,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pygments.org/languages/&quot;&gt;Pygments Supported languages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/9652490/do-i-need-to-generate-a-css-file-from-pygments-for-my-jekyll-blog-to-enable-col&quot;&gt;Pygments online deme&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Fri, 19 Dec 2014 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/howto/2014/12/19/freshman21-structure.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/howto/2014/12/19/freshman21-structure.html</guid>
+        
+        <category>structure</category>
+        
+        
+        <category>articles</category>
+        
+        <category>howto</category>
+        
+      </item>
+    
+      <item>
+        <title>How to install this theme</title>
+        <description>&lt;h2 id=&quot;how-to-install-freshman-theme&quot;&gt;How to install Freshman theme?&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# please make sure you have already installed git tools and ruby tools(gem)&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gem install sass
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gem install jekyll
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone https://github.com/yulijia/freshman21.git&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+
+
+Then, change the folder name to you own github page name, forexample
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mv freshman thisisyouname.github.io&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 18 Dec 2014 00:00:00 +0800</pubDate>
+        <link>https://luangng.github.io/luangng/articles/2014/12/18/how-to-install.html</link>
+        <guid isPermaLink="true">https://luangng.github.io/luangng/articles/2014/12/18/how-to-install.html</guid>
+        
+        <category>sample-post</category>
+        
+        
+        <category>articles</category>
+        
+      </item>
+    
   </channel>
 </rss>
