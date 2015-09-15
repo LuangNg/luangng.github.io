@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My blog</title>
+    <title>Luang.Ng</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
@@ -23,7 +23,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">My blog</a>
+                <a class="navbar-brand" href="/">Luang.Ng</a>
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -33,7 +33,7 @@
                     <li class="active"><a href="/about.html">About</a></li>
                     <li class="active"><a href="/feed.xml">RSS</a></li>
                     
-                      <li class="active"><a href="https://github.com/scotte/jekyll-clean">Github</a></li>
+                      <li class="active"><a href="https://github.com/LuangNg">Github</a></li>
                     
                 </ul>
               </div>
@@ -46,12 +46,14 @@
     <div class="row">
         <div class="col-md-3 hidden-xs">
             <div class="sidebar well">
-A jekyll theme
+Luang.Ng's tech blog.
 </div>
 
 <div class="sidebar well">
     <h1>Recent Posts</h1>
     <ul>
+        
+          <li><a href="/2015/09/Markdown-Syntax">Markdown Syntax</a></li>
         
           <li><a href="/2014/08/jekyll-clean-theme">Jekyll Clean Theme</a></li>
         
@@ -60,8 +62,6 @@ A jekyll theme
           <li><a href="/2014/06/Maecenas-feugiat-fringilla-nibh">Maecenas feugiat fringilla nibh</a></li>
         
           <li><a href="/2013/06/Cum-sociis-natoque-penatibus">Cum sociis natoque penatibus</a></li>
-        
-          <li><a href="/2013/05/Nulla-vel-risus-dapibus">Nulla vel risus dapibus</a></li>
         
     </ul>
 </div>
@@ -80,6 +80,119 @@ A jekyll theme
         </div>
         <div class="col-md-9">
             
+<div class="article">
+    <div class="well">
+        <h1><a href="/2015/09/Markdown-Syntax">Sep 15, 2015 - Markdown Syntax</a></h1>
+        
+        <div class="content">
+            <h2 id="概述">概述</h2>
+
+<p><strong>宗旨</strong></p>
+
+<p>Markdown 的目标是实现「易读易写」。</p>
+
+<p>可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。</p>
+
+<p>总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像<em>强调</em>。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。</p>
+
+<p><strong>兼容 HTML</strong></p>
+
+<p>Markdown 语法的目标是：成为一种适用于网络的书写语言。</p>
+
+<p>Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。</p>
+
+<p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。</p>
+
+<p>要制约的只有一些 HTML 区块元素――比如 &lt;div&gt;、&lt;table&gt;、&lt;pre&gt;、&lt;p&gt; 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &lt;p&gt; 标签。</p>
+
+<h1 id="一级标题">一级标题</h1>
+
+<h2 id="二级标题">二级标题</h2>
+
+<h3 id="三级标题">三级标题</h3>
+
+<h4 id="四级标题">四级标题</h4>
+
+<h5 id="五级标题">五级标题</h5>
+
+<h6 id="六级标题">六级标题</h6>
+
+<h1 id="一级标题">一级标题</h1>
+
+<h2 id="二级标题">二级标题</h2>
+
+<p><strong>文本加粗</strong>
+<em>斜体</em>
+<strong><em>加粗倾斜</em></strong></p>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<ul>
+<li>无序列表项一
+
+<ul>
+<li>子列表项一</li>
+<li>子列表项二</li>
+</ul></li>
+<li>无序列表项二</li>
+<li>无序列表项三</li>
+</ul>
+
+<ol>
+<li>有序列表项一</li>
+<li>有序列表项二</li>
+</ol>
+
+<blockquote>
+<p>引用文字</p>
+</blockquote>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">a</span><span class="p">(){</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">A</span>
+<span class="o">{</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>超链接<a href="https://www.baidu.com/">baidu</a>
+图片<img src="https://www.baidu.com/img/baidu_jgylogo3.gif?v=40661608.gif" alt="alt text" title="baidu"></p>
+
+<table>
+    <tr>
+        <th>表格头1</th>
+        <th>表格头2</th>
+    </tr>
+    <tr>
+        <td>表格内容1</td>
+        <td>表格内容2</td>
+    </tr>
+</table>
+
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+
+<p>This is the first level of quoting.</p>
+
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+
+<p>Back to the first level.</p>
+</blockquote>
+
+        </div>
+    </div>
+</div>
+
 <div class="article">
     <div class="well">
         <h1><a href="/2014/08/jekyll-clean-theme">Aug 23, 2014 - Jekyll Clean Theme</a></h1>
@@ -128,11 +241,11 @@ blog off this theme&#39;s branch. Either way it will work, and both have their o
 pros and cons.</p>
 
 <p>You can setup an upstream tracking repository like so:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ git remote add upstream git@github.com:scotte/jekyll-clean.git
+<div class="highlight"><pre><code class="language-" data-lang="">$ git remote add upstream git@github.com:scotte/jekyll-clean.git
 </code></pre></div>
 <p>And now when you wish to merge your own branch onto the latest version of the
 theme, simply do:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ git fetch upstream
+<div class="highlight"><pre><code class="language-" data-lang="">$ git fetch upstream
 $ git merge upstream/gh-pages
 </code></pre></div>
 <p>Of course you will have to resolve conflicts for _config.yml, _includes/links-list.html,
@@ -146,7 +259,7 @@ sitting in an <strong>old-master</strong> branch that I can refer to when I need
 <p>The content of this theme is distributed and licensed under a
 <img src="/images/cc_by_88x31.png" alt="License Badge">
 <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 License</a></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">This license lets others distribute, remix, tweak, and build upon your work,
+<div class="highlight"><pre><code class="language-" data-lang="">This license lets others distribute, remix, tweak, and build upon your work,
 even commercially, as long as they credit you for the original creation. This
 is the most accommodating of licenses offered. Recommended for maximum
 dissemination and use of licensed materials.
@@ -184,25 +297,10 @@ respective owners:</p>
     </div>
 </div>
 
-<div class="article">
-    <div class="well">
-        <h1><a href="/2014/06/Maecenas-feugiat-fringilla-nibh">Jun 23, 2014 - Maecenas feugiat fringilla nibh</a></h1>
-        
-        <div class="content">
-            <p>Maecenas feugiat fringilla nibh ut mattis. Sed non metus sit amet mi luctus feugiat in quis sem. Vivamus pulvinar commodo bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas sapien nulla, eleifend in dolor et, rutrum maximus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus malesuada egestas. Phasellus pulvinar vulputate urna in tempor. In vel sapien ullamcorper, condimentum ipsum ut, porttitor turpis. Nam auctor erat sed lectus tempus euismod. Nunc ipsum quam, condimentum ac bibendum sit amet, sodales nec metus.</p>
-
-<p>Vivamus a ullamcorper ipsum. Donec dictum eleifend massa, rhoncus consequat sem tempor nec. Ut bibendum luctus gravida. Nullam eleifend laoreet quam, nec tincidunt dolor tincidunt non. Aenean vel magna massa. Pellentesque sit amet tincidunt ante. Nulla posuere varius elit eu consequat. Sed vitae tortor scelerisque lacus eleifend condimentum. Nulla vitae neque sed lorem sagittis pretium eu nec est. Aliquam in euismod risus, vel vulputate orci.</p>
-
-<p>Praesent sit amet auctor justo. Suspendisse pretium rutrum vehicula. Cras ut porta urna. Morbi massa odio, eleifend vitae dictum eget, mattis nec metus. Praesent pellentesque metus eu massa pharetra facilisis. Suspendisse potenti. Vestibulum pellentesque pharetra tristique. Nam ut lobortis felis. Proin sit amet consequat ipsum. Curabitur et mattis justo, sit amet feugiat lectus. Sed eleifend eget arcu non pretium. Suspendisse rhoncus erat quis leo laoreet rhoncus. Aliquam quis metus vitae enim cursus sodales. In euismod tortor id odio fermentum, non pretium ipsum iaculis. Quisque consectetur elementum nisi, et posuere odio vulputate ac. Ut consequat, velit eget fermentum ultrices, ligula odio fringilla diam, sit amet accumsan elit velit tempus dolor.</p>
-
-        </div>
-    </div>
-</div>
-
 
 <div class="pagination">
   
-  <span class="page_number ">Page: 1 of 2</span>
+  <span class="page_number ">Page: 1 of 3</span>
   
     <a class="btn btn-default" href="/page2" class="next">Older</a>
   
@@ -215,7 +313,7 @@ respective owners:</p>
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12 footer navbar-inverse navbar-fixed-bottom">
-            <p class="copyright">&copy;2015 My blog. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
+            <p class="copyright">&copy;2015 Luang.Ng. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
             under
             <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
         </div>
