@@ -7,12 +7,32 @@
 		<atom:link href="http://luangng.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Markdown Syntax2</title>
+				<title>Markdown Syntax</title>
 				<description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;h3 id=&quot;what-is-markdown&quot;&gt;What is markdown?&lt;/h3&gt;
 
-&lt;h2 id=&quot;get-start&quot;&gt;Get Start&lt;/h2&gt;
+&lt;p&gt;Markdown is a lightweight markup language with plain text formatting syntax designed so that it can be converted to HTML and many other formats using a tool by the same name.Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.&lt;/p&gt;
+
+&lt;h3 id=&quot;purpose&quot;&gt;Purpose&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;quot;Easy read and write.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。&lt;/p&gt;
+
+&lt;p&gt;总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像&lt;em&gt;强调&lt;/em&gt;。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;兼容 HTML&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Markdown 语法的目标是：成为一种适用于网络的书写语言。&lt;/p&gt;
+
+&lt;p&gt;Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。&lt;/p&gt;
+
+&lt;p&gt;不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。&lt;/p&gt;
+
+&lt;p&gt;要制约的只有一些 HTML 区块元素――比如 &amp;lt;div&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;pre&amp;gt;、&amp;lt;p&amp;gt; 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &amp;lt;p&amp;gt; 标签。&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting started&lt;/h2&gt;
 
 &lt;h3 id=&quot;syntax&quot;&gt;Syntax&lt;/h3&gt;
 
@@ -154,120 +174,9 @@ The link text is delimited by [square brackets].Use a set of regular parentheses
 
 &lt;p&gt;You&amp;#39;d better to backclash escape any charactor you want to use. &lt;/p&gt;
 </description>
-				<pubDate>Wed, 16 Sep 2015 00:00:00 +0800</pubDate>
-				<link>http://luangng.github.io/2015/09/Markdown-Syntax2</link>
-				<guid isPermaLink="true">http://luangng.github.io/2015/09/Markdown-Syntax2</guid>
-			</item>
-		
-			<item>
-				<title>Markdown Syntax1</title>
-				<description>&lt;h2 id=&quot;概述&quot;&gt;概述&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;宗旨&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Markdown 的目标是实现「易读易写」。&lt;/p&gt;
-
-&lt;p&gt;可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。&lt;/p&gt;
-
-&lt;p&gt;总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像&lt;em&gt;强调&lt;/em&gt;。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;兼容 HTML&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Markdown 语法的目标是：成为一种适用于网络的书写语言。&lt;/p&gt;
-
-&lt;p&gt;Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法种类很少，只对应 HTML 标记的一小部分。Markdown 的构想不是要使得 HTML 文档更容易书写。在我看来， HTML 已经很容易写了。Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。&lt;/p&gt;
-
-&lt;p&gt;不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。&lt;/p&gt;
-
-&lt;p&gt;要制约的只有一些 HTML 区块元素――比如 &amp;lt;div&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;pre&amp;gt;、&amp;lt;p&amp;gt; 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &amp;lt;p&amp;gt; 标签。&lt;/p&gt;
-
-&lt;h1 id=&quot;一级标题&quot;&gt;一级标题&lt;/h1&gt;
-
-&lt;h2 id=&quot;二级标题&quot;&gt;二级标题&lt;/h2&gt;
-
-&lt;h3 id=&quot;三级标题&quot;&gt;三级标题&lt;/h3&gt;
-
-&lt;h4 id=&quot;四级标题&quot;&gt;四级标题&lt;/h4&gt;
-
-&lt;h5 id=&quot;五级标题&quot;&gt;五级标题&lt;/h5&gt;
-
-&lt;h6 id=&quot;六级标题&quot;&gt;六级标题&lt;/h6&gt;
-
-&lt;h1 id=&quot;一级标题&quot;&gt;一级标题&lt;/h1&gt;
-
-&lt;h2 id=&quot;二级标题&quot;&gt;二级标题&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;文本加粗&lt;/strong&gt;
-&lt;em&gt;斜体&lt;/em&gt;
-&lt;strong&gt;&lt;em&gt;加粗倾斜&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;hr&gt;
-
-&lt;hr&gt;
-
-&lt;ul&gt;
-&lt;li&gt;无序列表项一
-
-&lt;ul&gt;
-&lt;li&gt;子列表项一&lt;/li&gt;
-&lt;li&gt;子列表项二&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;无序列表项二&lt;/li&gt;
-&lt;li&gt;无序列表项三&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;有序列表项一&lt;/li&gt;
-&lt;li&gt;有序列表项二&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;引用文字&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;超链接&lt;a href=&quot;https://www.baidu.com/&quot;&gt;baidu&lt;/a&gt;
-图片&lt;img src=&quot;https://www.baidu.com/img/baidu_jgylogo3.gif?v=40661608.gif&quot; alt=&quot;alt text&quot; title=&quot;baidu&quot;&gt;&lt;/p&gt;
-
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;表格头1&lt;/th&gt;
-        &lt;th&gt;表格头2&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;表格内容1&lt;/td&gt;
-        &lt;td&gt;表格内容2&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-
-&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
-
-&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is nested blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Back to the first level.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
 				<pubDate>Tue, 15 Sep 2015 00:00:00 +0800</pubDate>
-				<link>http://luangng.github.io/2015/09/Markdown-Syntax1</link>
-				<guid isPermaLink="true">http://luangng.github.io/2015/09/Markdown-Syntax1</guid>
+				<link>http://luangng.github.io/2015/09/Markdown-Syntax</link>
+				<guid isPermaLink="true">http://luangng.github.io/2015/09/Markdown-Syntax</guid>
 			</item>
 		
 			<item>
