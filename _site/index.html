@@ -53,15 +53,15 @@ Luang.Ng's tech blog.
     <h1>Recent Posts</h1>
     <ul>
         
-          <li><a href="/2015/09/Markdown-Syntax">Markdown Syntax</a></li>
+          <li><a href="/2015/09/Markdown-Syntax2">Markdown Syntax2</a></li>
+        
+          <li><a href="/2015/09/Markdown-Syntax1">Markdown Syntax1</a></li>
         
           <li><a href="/2014/08/jekyll-clean-theme">Jekyll Clean Theme</a></li>
         
           <li><a href="/2014/07/Lorem-ipsum-dolor-sit-amet">Lorem ipsum dolor sit amet</a></li>
         
           <li><a href="/2014/06/Maecenas-feugiat-fringilla-nibh">Maecenas feugiat fringilla nibh</a></li>
-        
-          <li><a href="/2013/06/Cum-sociis-natoque-penatibus">Cum sociis natoque penatibus</a></li>
         
     </ul>
 </div>
@@ -82,7 +82,162 @@ Luang.Ng's tech blog.
             
 <div class="article">
     <div class="well">
-        <h1><a href="/2015/09/Markdown-Syntax">Sep 15, 2015 - Markdown Syntax</a></h1>
+        <h1><a href="/2015/09/Markdown-Syntax2">Sep 16, 2015 - Markdown Syntax2</a></h1>
+        
+        <div class="content">
+            <h2 id="introduction">Introduction</h2>
+
+<h3 id="what-is-markdown">What is markdown?</h3>
+
+<h2 id="get-start">Get Start</h2>
+
+<h3 id="syntax">Syntax</h3>
+
+<h4 id="blockquotes">Blockquotes</h4>
+
+<p>Put &quot;&gt;&quot; before every line.</p>
+
+<blockquote>
+<p>This is a blockquote</p>
+</blockquote>
+
+<h4 id="lists">Lists</h4>
+
+<p>Markdown supports ordered(numbered) and unordered(bulleted) lists.Like this:
+For unordered lists, you just start with *, - or + and put a blankspace right behind it.
++ Red
++ Green
++ Blue</p>
+
+<p>For ordered lists, pls start with a number and a dot and a blankspace.</p>
+
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+
+<h4 id="code-blocks">Code Blocks</h4>
+
+<p>Markdown requires wrapping a code block in both &lt;pre&gt;and&lt;code&gt;tags.To produce a code in markdown doc, you should simply indent every line of the block at least 4 spaces or 1 tab.Like below:</p>
+
+<p>This is a normal paragraph</p>
+<div class="highlight"><pre><code class="language-" data-lang="">This is a code block
+</code></pre></div>
+<p>Markdown parser will generate HTML code like this:
+&lt;p&gt;This is a normal paragraph :&lt;/p&gt;
+&lt;pre&gt;
+    &lt;code&gt;This is a code block .&lt;/code&gt;
+&lt;/pre&gt;</p>
+
+<p>A code block continues until it reaches a line that is not intended(or the end of the article).</p>
+
+<p>Within a code block(which is intended), all the HTML tags will be converted into HTML entities.However, regular markdown syntax is not processed within code blocks.This means it&#39;s easy to use markdown to write about Markdown&#39;s own syntax.</p>
+
+<p>However, it&#39;s better to surounded by &quot;```[type of lang]&quot;.Like this:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">    <span class="kd">function</span><span class="p">(){</span>
+        <span class="k">do</span> <span class="nx">sth</span><span class="p">...</span>
+    <span class="p">}</span>
+</code></pre></div>
+<h4 id="horizontal-rules">Horizontal Rules</h4>
+
+<p>In MD files, you can produce a horizontal rule tag(&lt;bt /&gt;) by placing three or more &quot;*&quot;, &quot;-&quot;(recommended) or &quot;_&quot;.</p>
+
+<hr>
+
+<h4 id="span-elements">Span Elements</h4>
+
+<p>Markdown just supports two style of links: inline and reference.
+The link text is delimited by [square brackets].Use a set of regular parentheses immediately to create an inline link after the link text.And the &quot;title&quot; is optional. eg.</p>
+
+<p>This is an <a href="http://example.com/" title="Title">example</a> inline link.</p>
+
+<p>Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:</p>
+
+<p>This is an <a href="http://example.com/" title="Optional Title Here">example</a> reference - style link.</p>
+
+<p>Then, anywhere in the document, you define your link label like this, on a line by itself:</p>
+
+<h4 id="emphasis">Emphasis</h4>
+
+<p>Markdown treats asterisks(*) and underscores(_) as indicators of emphasis.Text wrapped with one * or _ will be wrapped with HTMl &lt;em&gt; tag; double * or _ will be wrapped with an HTML&lt;Strong&gt;</p>
+
+<p><em>single asterisks</em> <em>single asterisks</em></p>
+
+<p><strong>double underscores</strong> <strong>double underscores</strong></p>
+
+<p>If you want to use charactor &quot;*&quot;, suround with spaces would be handle it.Backslash escape it is recommended. </p>
+
+<h4 id="code">Code</h4>
+
+<p>To indicate a span of code, wrap it with backtick quotes(&#39;).HTML tags will be treat as character strings. Check below:</p>
+
+<p>Use the <code>printf()</code> function.</p>
+
+<h4 id="image">Image</h4>
+
+<p><img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="baidu logo" title="baidu"></p>
+
+<h4 id="table">Table</h4>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Left align</th>
+<th style="text-align: right">Right align</th>
+<th style="text-align: center">Center align</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">This</td>
+<td style="text-align: right">This</td>
+<td style="text-align: center">This</td>
+</tr>
+<tr>
+<td style="text-align: left">column</td>
+<td style="text-align: right">column</td>
+<td style="text-align: center">column</td>
+</tr>
+<tr>
+<td style="text-align: left">will</td>
+<td style="text-align: right">will</td>
+<td style="text-align: center">will</td>
+</tr>
+<tr>
+<td style="text-align: left">be</td>
+<td style="text-align: right">be</td>
+<td style="text-align: center">be</td>
+</tr>
+<tr>
+<td style="text-align: left">left</td>
+<td style="text-align: right">right</td>
+<td style="text-align: center">center</td>
+</tr>
+<tr>
+<td style="text-align: left">aligned</td>
+<td style="text-align: right">aligned</td>
+<td style="text-align: center">aligned</td>
+</tr>
+</tbody></table>
+
+<h4 id="miscellaneous">Miscellaneous</h4>
+
+<h5 id="automatic-links">Automatic Links</h5>
+
+<p>Simply surround the URL or email address with angle brackets(&lt;&gt;). Like this:</p>
+
+<p><a href="http://luangng.github.io/">http://luangng.github.io/</a></p>
+
+<h5 id="backslash-escapes">Backslash Escapes</h5>
+
+<p>You&#39;d better to backclash escape any charactor you want to use. </p>
+
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class="well">
+        <h1><a href="/2015/09/Markdown-Syntax1">Sep 15, 2015 - Markdown Syntax1</a></h1>
         
         <div class="content">
             <h2 id="概述">概述</h2>
@@ -277,21 +432,6 @@ respective owners:</p>
 <li>js/jquery.min.js - <a href="https://jquery.com">jquery</a></li>
 <li>images/cc_by_88x31.png - <a href="https://creativecommons.org">creative commons</a></li>
 </ul>
-
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="well">
-        <h1><a href="/2014/07/Lorem-ipsum-dolor-sit-amet">Jul 23, 2014 - Lorem ipsum dolor sit amet</a></h1>
-        
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam metus, commodo sit amet ante a, finibus efficitur lorem. Maecenas egestas purus in tempor volutpat. Sed dapibus tortor nec sem suscipit ullamcorper. Nulla nec lorem lacus. Phasellus condimentum massa quis dolor consequat viverra ut ac magna. Ut a consequat nisi. Vivamus at leo ut turpis convallis lacinia. Curabitur eu placerat quam. Donec ultricies faucibus dui, a tincidunt lorem lobortis condimentum.</p>
-
-<p>Quisque aliquet consectetur justo sit amet convallis. Nunc vel aliquet ipsum, sit amet elementum justo. Vivamus id magna mi. Cras luctus est vel ipsum sagittis pellentesque. Vivamus ante elit, porttitor vitae quam quis, fermentum malesuada risus. Integer nec lectus vel lacus cursus tristique in euismod ipsum. Duis ut varius enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi et elit eu tortor lacinia sollicitudin non in lacus.</p>
-
-<p>Integer at viverra turpis. Duis aliquam mattis sapien tempor eleifend. Mauris nec eleifend risus, quis mollis neque. Vivamus non dapibus justo, vel ornare magna. Nunc in nulla venenatis, imperdiet diam in, accumsan massa. Etiam congue augue ipsum, sit amet rutrum nisi blandit quis. Cras in lectus non lorem auctor consequat a vel sem. Aliquam erat volutpat. Fusce lobortis vel orci vitae ullamcorper. Phasellus id eleifend eros. Mauris vulputate, nisi vel auctor auctor, quam enim tincidunt felis, vitae fermentum odio tortor eget est. Integer ornare blandit lectus a accumsan.</p>
 
         </div>
     </div>

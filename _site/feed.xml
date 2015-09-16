@@ -7,7 +7,160 @@
 		<atom:link href="http://luangng.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Markdown Syntax</title>
+				<title>Markdown Syntax2</title>
+				<description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;h3 id=&quot;what-is-markdown&quot;&gt;What is markdown?&lt;/h3&gt;
+
+&lt;h2 id=&quot;get-start&quot;&gt;Get Start&lt;/h2&gt;
+
+&lt;h3 id=&quot;syntax&quot;&gt;Syntax&lt;/h3&gt;
+
+&lt;h4 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h4&gt;
+
+&lt;p&gt;Put &amp;quot;&amp;gt;&amp;quot; before every line.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;lists&quot;&gt;Lists&lt;/h4&gt;
+
+&lt;p&gt;Markdown supports ordered(numbered) and unordered(bulleted) lists.Like this:
+For unordered lists, you just start with *, - or + and put a blankspace right behind it.
++ Red
++ Green
++ Blue&lt;/p&gt;
+
+&lt;p&gt;For ordered lists, pls start with a number and a dot and a blankspace.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;code-blocks&quot;&gt;Code Blocks&lt;/h4&gt;
+
+&lt;p&gt;Markdown requires wrapping a code block in both &amp;lt;pre&amp;gt;and&amp;lt;code&amp;gt;tags.To produce a code in markdown doc, you should simply indent every line of the block at least 4 spaces or 1 tab.Like below:&lt;/p&gt;
+
+&lt;p&gt;This is a normal paragraph&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;This is a code block
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Markdown parser will generate HTML code like this:
+&amp;lt;p&amp;gt;This is a normal paragraph :&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;
+    &amp;lt;code&amp;gt;This is a code block .&amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;A code block continues until it reaches a line that is not intended(or the end of the article).&lt;/p&gt;
+
+&lt;p&gt;Within a code block(which is intended), all the HTML tags will be converted into HTML entities.However, regular markdown syntax is not processed within code blocks.This means it&amp;#39;s easy to use markdown to write about Markdown&amp;#39;s own syntax.&lt;/p&gt;
+
+&lt;p&gt;However, it&amp;#39;s better to surounded by &amp;quot;```[type of lang]&amp;quot;.Like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h4&gt;
+
+&lt;p&gt;In MD files, you can produce a horizontal rule tag(&amp;lt;bt /&amp;gt;) by placing three or more &amp;quot;*&amp;quot;, &amp;quot;-&amp;quot;(recommended) or &amp;quot;_&amp;quot;.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h4 id=&quot;span-elements&quot;&gt;Span Elements&lt;/h4&gt;
+
+&lt;p&gt;Markdown just supports two style of links: inline and reference.
+The link text is delimited by [square brackets].Use a set of regular parentheses immediately to create an inline link after the link text.And the &amp;quot;title&amp;quot; is optional. eg.&lt;/p&gt;
+
+&lt;p&gt;This is an &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;example&lt;/a&gt; inline link.&lt;/p&gt;
+
+&lt;p&gt;Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:&lt;/p&gt;
+
+&lt;p&gt;This is an &lt;a href=&quot;http://example.com/&quot; title=&quot;Optional Title Here&quot;&gt;example&lt;/a&gt; reference - style link.&lt;/p&gt;
+
+&lt;p&gt;Then, anywhere in the document, you define your link label like this, on a line by itself:&lt;/p&gt;
+
+&lt;h4 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h4&gt;
+
+&lt;p&gt;Markdown treats asterisks(*) and underscores(_) as indicators of emphasis.Text wrapped with one * or _ will be wrapped with HTMl &amp;lt;em&amp;gt; tag; double * or _ will be wrapped with an HTML&amp;lt;Strong&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt; &lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt; &lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to use charactor &amp;quot;*&amp;quot;, suround with spaces would be handle it.Backslash escape it is recommended. &lt;/p&gt;
+
+&lt;h4 id=&quot;code&quot;&gt;Code&lt;/h4&gt;
+
+&lt;p&gt;To indicate a span of code, wrap it with backtick quotes(&amp;#39;).HTML tags will be treat as character strings. Check below:&lt;/p&gt;
+
+&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;h4 id=&quot;image&quot;&gt;Image&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.baidu.com/img/baidu_jgylogo3.gif&quot; alt=&quot;baidu logo&quot; title=&quot;baidu&quot;&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;table&quot;&gt;Table&lt;/h4&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align: left&quot;&gt;Left align&lt;/th&gt;
+&lt;th style=&quot;text-align: right&quot;&gt;Right align&lt;/th&gt;
+&lt;th style=&quot;text-align: center&quot;&gt;Center align&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;This&lt;/td&gt;
+&lt;td style=&quot;text-align: right&quot;&gt;This&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;This&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;column&lt;/td&gt;
+&lt;td style=&quot;text-align: right&quot;&gt;column&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;will&lt;/td&gt;
+&lt;td style=&quot;text-align: right&quot;&gt;will&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;will&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;be&lt;/td&gt;
+&lt;td style=&quot;text-align: right&quot;&gt;be&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;be&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;left&lt;/td&gt;
+&lt;td style=&quot;text-align: right&quot;&gt;right&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;center&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align: left&quot;&gt;aligned&lt;/td&gt;
+&lt;td style=&quot;text-align: right&quot;&gt;aligned&lt;/td&gt;
+&lt;td style=&quot;text-align: center&quot;&gt;aligned&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h4 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h4&gt;
+
+&lt;h5 id=&quot;automatic-links&quot;&gt;Automatic Links&lt;/h5&gt;
+
+&lt;p&gt;Simply surround the URL or email address with angle brackets(&amp;lt;&amp;gt;). Like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://luangng.github.io/&quot;&gt;http://luangng.github.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;backslash-escapes&quot;&gt;Backslash Escapes&lt;/h5&gt;
+
+&lt;p&gt;You&amp;#39;d better to backclash escape any charactor you want to use. &lt;/p&gt;
+</description>
+				<pubDate>Wed, 16 Sep 2015 00:00:00 +0800</pubDate>
+				<link>http://luangng.github.io/2015/09/Markdown-Syntax2</link>
+				<guid isPermaLink="true">http://luangng.github.io/2015/09/Markdown-Syntax2</guid>
+			</item>
+		
+			<item>
+				<title>Markdown Syntax1</title>
 				<description>&lt;h2 id=&quot;概述&quot;&gt;概述&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;宗旨&lt;/strong&gt;&lt;/p&gt;
@@ -113,8 +266,8 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
 				<pubDate>Tue, 15 Sep 2015 00:00:00 +0800</pubDate>
-				<link>http://luangng.github.io/2015/09/Markdown-Syntax</link>
-				<guid isPermaLink="true">http://luangng.github.io/2015/09/Markdown-Syntax</guid>
+				<link>http://luangng.github.io/2015/09/Markdown-Syntax1</link>
+				<guid isPermaLink="true">http://luangng.github.io/2015/09/Markdown-Syntax1</guid>
 			</item>
 		
 			<item>
